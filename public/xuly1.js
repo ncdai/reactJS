@@ -10,7 +10,7 @@ var BaiViet = React.createClass({
         return {
             luotThich: this.props.luotThich,
             thich: 0,
-            text: "Thich",
+            text: "Thich"
         }
     },
 

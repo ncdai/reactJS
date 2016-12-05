@@ -1,3 +1,18 @@
+var InputTag = React.createClass({
+    show() {
+        var text = this.refs.txt.value;
+        alert(text);
+    },
+    render() {
+        return(
+            <div>
+                <input type="text" ref="txt"/>
+                <button onClick={this.show}>Hien thi</button>
+            </div>
+        );
+    }
+});
+
 var KhoaHoc = React.createClass({
     addStudent() {
         this.state.tongHocVien = parseInt(this.state.tongHocVien) + 1;
@@ -21,6 +36,7 @@ var KhoaHoc = React.createClass({
 
 ReactDOM.render(
     <div>
+        <InputTag />
         <KhoaHoc ten="ReactJS" tongHocVien="10" />
         <KhoaHoc ten="NodeJs" tongHocVien="20" />
     </div>
